@@ -23,8 +23,8 @@ export default class Login extends Component {
           Taro.setStorageSync('token', loginRes.result.data.token)
           Taro.setStorageSync('userInfo', loginRes.result.data.userInfo)
           
-          // 跳转到首页
-          Taro.switchTab({
+          // 登录成功，重新启动到首页
+          Taro.reLaunch({
             url: '/pages/index/index'
           })
         } else {

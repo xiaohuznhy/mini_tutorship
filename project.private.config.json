@@ -1,7 +1,19 @@
 {
   "libVersion": "3.14.1",
   "projectname": "mini_tutorship",
-  "condition": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/login/index",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  },
   "setting": {
     "urlCheck": false,
     "coverView": true,

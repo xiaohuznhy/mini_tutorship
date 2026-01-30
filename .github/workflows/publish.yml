@@ -1,0 +1,35 @@
+name: Publish Common Package to GitHub Packages
+
+on:
+  push:
+    branches:
+      - main # 或者你的主分支名
+    paths:
+      - 'packages/common/**' # 只有 common 包内容变化时才触发
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@xiaohuznhy'
+
+      - name: Install dependencies and publish
+        run: |
+          cd packages/common
+          npm install
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

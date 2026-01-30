@@ -1,0 +1,22 @@
+{
+  "name": "@xiaohuznhy/common",
+  "version": "1.0.0",
+  "description": "托管机构SaaS小程序 - 公共模块",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiaohuznhy",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xiaohuznhy/mini_tutorship.git"
+  },
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}
+

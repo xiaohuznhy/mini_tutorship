@@ -1,5 +1,6 @@
 {
   "miniprogramRoot": "dist/",
+  "cloudfunctionRoot": "cloudfunctions/",
   "projectname": "tutorship-miniapp",
   "description": "托管机构SaaS小程序",
   "appid": "wx511c82a2fa68cf51",
@@ -55,5 +56,6 @@
     "ignore": [],
     "include": []
   },
-  "editorSetting": {}
+  "editorSetting": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/"
 }

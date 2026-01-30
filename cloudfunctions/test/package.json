@@ -1,0 +1,9 @@
+{
+  "name": "test-common-function",
+  "version": "1.0.0",
+  "description": "用于测试公共云函数的云函数",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}

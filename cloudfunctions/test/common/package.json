@@ -1,0 +1,10 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "description": "公共云函数 - 提供通用工具函数和中间件",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}
+
